@@ -1,0 +1,40 @@
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  padding-top: 310px;
+  margin: auto 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: white; /* Fondo blanco por defecto */
+  color: black; /* Texto negro por defecto */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.sidebar li.active {
+  background-color: black; /* Fondo negro para el elemento activo */
+  color: white; /* Texto blanco para el elemento activo */
+}
+
+.sidebar li:hover {
+  background-color: rgb(236, 178, 16); /* Fondo negro al pasar el cursor */
+  color: white; /* Texto blanco al pasar el cursor */
+}
