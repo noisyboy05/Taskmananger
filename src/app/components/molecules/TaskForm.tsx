@@ -29,14 +29,12 @@ const TaskForm = ({ onAddTask }: TaskFormProps) => {
         placeholder="Nombre de la tarea"
         value={nombre}
         onChange={(e) => setNombre(e.target.value)}
-        className="px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
-      />
+        className="px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-800 text-gray-800 font-bold transition duration-200"      />
   
       <select
         value={dificultad}
         onChange={(e) => setDificultad(e.target.value as "baja" | "media" | "alta")}
-        className="px-4 py-2 border border-gray-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
-      >
+        className="px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-800 text-gray-800 font-bold transition duration-200"      >
         <option value="" disabled>
           Selecciona dificultad
         </option>

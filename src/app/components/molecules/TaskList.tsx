@@ -55,7 +55,7 @@ const TaskList = ({
       {/* Título arriba */}
       <div className="text-center mb-6">
         <p className="text-gray-500 italic text-sm">¡Hola!</p>
-        <h2 className="text-xl font-semibold text-gray-700">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Tienes {tareas.length} {tareas.length === 1 ? "tarea" : "tareas"} para hoy 📝
         </h2>
       </div>
