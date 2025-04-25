@@ -7,7 +7,7 @@ interface SidebarProps {
 
 export default function Sidebar({ onSelect }: SidebarProps) {
   return (
-    <aside className="w-40 flex flex-col justify-center items-center p-2">
+    <aside className="w-40 h-screen flex flex-col justify-center items-center p-2">
       <ul className="space-y-4 w-full flex flex-col items-center">
         <li
           className="flex flex-col items-center hover:bg-gray-100 p-2 rounded-md cursor-pointer"

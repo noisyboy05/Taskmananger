@@ -49,13 +49,14 @@ export default function Home() {
       {/* Sidebar */}
       <aside className="w-46 h-full flex flex-col bg-white items-center">
         {/* Logo */}
-        <div className="h-20 flex items-center justify-center p-2">
-          <img
-            src="/logo.jpg"
-            alt="Logo"
-            className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
-          />
-        </div>
+        <div className="h-24 flex items-center justify-center p-2">
+        <img
+          src="/logo.jpg"
+          alt="Logo"
+          className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+        />
+          </div>
+
         {/* Sidebar Items */}
         <Sidebar onSelect={setView} />
       </aside>
