@@ -9,14 +9,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 dotenv.config({ path: join(__dirname, '.env.local') });
-const distPath = join(process.cwd(), '.next', 'static', 'chunks');
-
+const distPath = join(process.cwd(), 'dist', '_next', 'static', 'chunks');
 
 if (!fs.existsSync(distPath)) {
   console.error(
-    "❌ La carpeta 'dist/_next/static/chunks' no existe. Ejecuta 'npm run build' primero && según tu ambiente."
+    `❌ La carpeta '${distPath}' no existe. Ejecuta 'npm run build' primero.`
   );
-
   process.exit(1);
 }
 
